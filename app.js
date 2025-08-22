@@ -32,14 +32,11 @@ console.log(nombre);
          listaDeAmigos.push(nombre);
 
         agregar("elementoLista",nombre, listaHtml)
-         /*let elementoLista = document.createElement("li");
-         elementoLista.textContent = nombre;
-         listaHtml.appendChild(elementoLista);
-*/
+ 
          document.getElementById("X").value = "";
          textoh2("h2","Digite el nombre de sus amigos","blue")
          limpiarLista("resultado")
-         //document.getElementById("resultado").innerHTML = "";
+         
     }
 }
 
@@ -52,7 +49,7 @@ function sortearAmigo(){
          console.log(numeroAleatoreo);
         agregar ("resultadoDeLista",`El amigo secreto es:${listaDeAmigos[numeroAleatoreo]}`,listaResultado);
         limpiarLista("listaAmigos")
-        //document.getElementById("listaAmigos").innerHTML = "";
+       
         listaDeAmigos = [];
     }
 }
